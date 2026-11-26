@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html> 
+<!-- L.S Buthelezi 2023030329 -->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title- MyApp</title>
+    
+    <link rel="stylesheet" asp-href-include="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" asp-href-include="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" asp-href-include="~/css/custom.css" />
+</head>
+<body>
+    <div>
+        @RenderBody()
+        <div class="container">
+            @RenderBody() <!-- Main content of each view will render here -->
+        </div>
+
+        <!-- Page footer (copy from layout.txt) -->
+        <footer>
+            <p>&copy; 2026 MyApp. All Rights Reserved.</p>
+        </footer>
+
+        <!-- JavaScript files using ASP.NET tag helpers -->
+        <script asp-src-include="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+</html>
